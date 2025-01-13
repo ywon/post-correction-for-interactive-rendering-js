@@ -37,7 +37,7 @@ framesTranining = 101
 
 input_dir = os.path.join(os.getcwd(), 'dataset')
 SCENE = 'data_Dining-room-dynamic-32spp'
-read_types = ['path_demodul', 'path', 'mvec', 'linearZ', 'pnFwidth', 'albedo', 'normal','variance','optix', 'ref', 'svgf', 'temporal_variance', 'bmfr', 'nbg', 'accum']
+read_types = ['path_demodul', 'path', 'mvec', 'linearZ', 'pnFwidth', 'albedo', 'normal','variance','optix', 'ref', 'svgf', 'nbg']
 loader = DataLoader(os.path.join(input_dir, SCENE), read_types)
 
 # these dimensions should be matched to the constants in cuda code
